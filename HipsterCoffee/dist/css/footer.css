@@ -1,0 +1,31 @@
+footer {
+  background-color: #343a40;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  color: #ced4da; }
+  footer nav {
+    margin-bottom: 60px;
+    width: 100%;
+    text-align: center;
+    font-weight: lighter; }
+    footer nav a {
+      color: #078ce6;
+      margin: 0 2%; }
+    footer nav .footer__nav__link--active {
+      color: #ced4da;
+      text-decoration: none; }
+  footer h3 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+    letter-spacing: 0.1em; }
+  footer p {
+    font-weight: lighter;
+    font-size: 16px; }
+    footer p a {
+      color: #078ce6; }
+
+/*# sourceMappingURL=footer.css.map */

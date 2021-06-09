@@ -1,0 +1,82 @@
+@import "variables.scss";
+@import "map.scss";
+
+@import "header.scss";
+
+main {
+  max-width: $body_width;
+  min-height: 65vh;
+  margin: auto;
+  @media (max-width: 1200px) {
+    padding: 0 5%;
+  }
+
+  .people {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 1200px) {
+      flex-wrap: wrap;
+    }
+    &__card {
+      width: 33%;
+      height: 350px;
+      position: relative;
+      overflow: hidden;
+
+      &:hover {
+        .people__card__text {
+          h3 {
+            margin-top: 20%;
+          }
+          width: 100%;
+          height: 100%;
+          top: 40px;
+          background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.85) 40%,
+            rgba(255, 255, 255, 0.3) 100%
+          );
+        }
+        // background
+      }
+
+      img {
+        height: 300px;
+      }
+      &__text {
+        padding: 10px;
+        position: absolute;
+        top: 310px;
+        transition: top 300ms ease-out;
+        h3 {
+          font-size: 26px;
+          margin-bottom: 20px;
+          background-color: rgba(255, 255, 255, 0.75);
+        }
+      }
+    }
+    .jade {
+      background-image: url(../img/jade.jpg);
+      background-position: right;
+    }
+    .vincent {
+      background-image: url(../img/barista.jpg);
+      background-position: center;
+    }
+    .wayne {
+      background-image: url(../img/owner.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+  }
+}
+
+@import "footer.scss";
